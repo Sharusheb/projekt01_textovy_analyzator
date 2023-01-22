@@ -109,3 +109,8 @@ for slovo in vyber_textu:
         cisla.append(slovo)
 pocet_cisel = len(cisla)
 print(f"Ve vybranem textu je {pocet_cisel} cisel.")
+
+for cislo in range(len(cisla)):
+    cisla[cislo] = int(cisla[cislo])
+suma_cisel = sum(cisla)
+print(f"Suma vsech cisel je {suma_cisel}.")
