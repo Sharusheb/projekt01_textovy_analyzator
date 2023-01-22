@@ -114,3 +114,6 @@ for cislo in range(len(cisla)):
     cisla[cislo] = int(cisla[cislo])
 suma_cisel = sum(cisla)
 print(f"Suma vsech cisel je {suma_cisel}.")
+
+print(oddelovac)
+
