@@ -48,7 +48,16 @@ if registrovani.get(jmeno) == heslo:
     print(oddelovac)
     print("Vitej v aplikaci, ", jmeno)
     print("K dispozici jsou 3 texty k analyze.")
+    print(oddelovac)
 else:
     print(oddelovac)
     print("Neregistrovany uzivatel, ukoncuji program..")
-    quit
+    quit()
+
+vyber_textu = input("Vyber si cislo textu od 1 do 3: ")
+
+if int(vyber_textu) not in range(1, 4) or not vyber_textu.isnumeric():
+    print("Text s vybranym cislem neexistuje! Ukoncuji program...")
+    quit()
+else:
+    print("bla")
