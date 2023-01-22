@@ -93,3 +93,12 @@ for slovo in vyber_textu:
         velka_pismena.append(slovo)
 velka_pismena_pocet = len(velka_pismena)
 print(f"Ve vybranem textu je {velka_pismena_pocet} slov velkym pismenem.")
+
+mala_pismena = []
+
+for slovo in vyber_textu:
+    if slovo.islower():
+        mala_pismena.append(slovo)
+mala_pismena_pocet = len(mala_pismena)
+print(f"Ve vybranem textu je {mala_pismena_pocet} slov malym pismenem.")
+
