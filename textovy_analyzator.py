@@ -102,3 +102,10 @@ for slovo in vyber_textu:
 mala_pismena_pocet = len(mala_pismena)
 print(f"Ve vybranem textu je {mala_pismena_pocet} slov malym pismenem.")
 
+cisla = []
+
+for slovo in vyber_textu:
+    if slovo.isnumeric():
+        cisla.append(slovo)
+pocet_cisel = len(cisla)
+print(f"Ve vybranem textu je {pocet_cisel} cisel.")
