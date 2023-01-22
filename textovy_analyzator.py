@@ -32,6 +32,10 @@ in modern oceans. Other fish such as paddlefish,
 garpike and stingray are also present.'''
 ]
 
+text_1 = tuple(TEXTS[0].split(" "))
+text_2 = tuple(TEXTS[1].split(" "))
+text_3 = tuple(TEXTS[2].split(" "))
+
 registrovani = {
     "bob":"123", 
     "ann":"pass123", 
@@ -60,4 +64,11 @@ if int(vyber_textu) not in range(1, 4) or not vyber_textu.isnumeric():
     print("Text s vybranym cislem neexistuje! Ukoncuji program...")
     quit()
 else:
-    print("bla")
+    print("Vybral jsi text číslo: ", vyber_textu)
+
+pocet_slov_1 = []
+
+for slovo in text_1:
+    pocet_slov_1.append(slovo.replace("\n", "").strip(",.!?:"))
+    
+    
