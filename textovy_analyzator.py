@@ -78,13 +78,18 @@ delka_textu = len(pocet_slov)
 print(oddelovac)
 print(f"Ve vybranem textu je {delka_textu} slov.")
 
-velka_pismena = []
+velke_pismeno = []
 
 for slovo in vyber_textu:
     if slovo.istitle():
+        velke_pismeno.append(slovo)
+velke_pismeno_pocet = len(velke_pismeno)
+print(f"Ve vybranem textu je {velke_pismeno_pocet} slov zacinajici velkym pismenem.")
+
+velka_pismena = []
+
+for slovo in vyber_textu:
+    if slovo.isupper() and slovo.isalpha():
         velka_pismena.append(slovo)
 velka_pismena_pocet = len(velka_pismena)
-print(f"Ve vybranem textu je {velka_pismena_pocet} slov zacinajici velkym pismenem.")
-
-
-
+print(f"Ve vybranem textu je {velka_pismena_pocet} slov velkym pismenem.")
