@@ -74,6 +74,17 @@ pocet_slov = []
 
 for slovo in vyber_textu:
     pocet_slov.append(slovo.replace("\n", "").strip(",.!?:"))
-    delka_textu = len(pocet_slov)
+delka_textu = len(pocet_slov)
+print(oddelovac)
+print(f"Ve vybranem textu je {delka_textu} slov.")
 
-print(f"Ve vybranem textu je celkem {delka_textu} slov.")
+velka_pismena = []
+
+for slovo in vyber_textu:
+    if slovo.istitle():
+        velka_pismena.append(slovo)
+velka_pismena_pocet = len(velka_pismena)
+print(f"Ve vybranem textu je {velka_pismena_pocet} slov zacinajici velkym pismenem.")
+
+
+
