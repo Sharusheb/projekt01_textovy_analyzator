@@ -117,9 +117,15 @@ print(f"Suma vsech cisel je {suma_cisel}.")
 
 print(oddelovac)
 
-hvezdicky = []
+graf=dict()
 
 for slovo in pocet_slov:
-    hvezdicky.append((len(slovo)*("*")))
+    delka_slova = len(slovo)
+    if delka_slova in graf:
+        graf[delka_slova]+=1
+    else:
+        graf[delka_slova]=1
 
+for delka in sorted(graf):
+    print(f"{delka} {graf[delka]*'*'}")
 
