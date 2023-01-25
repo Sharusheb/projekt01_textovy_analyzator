@@ -117,3 +117,9 @@ print(f"Suma vsech cisel je {suma_cisel}.")
 
 print(oddelovac)
 
+hvezdicky = []
+
+for slovo in pocet_slov:
+    hvezdicky.append((len(slovo)*("*")))
+
+
