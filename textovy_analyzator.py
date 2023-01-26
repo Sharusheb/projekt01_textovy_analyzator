@@ -117,6 +117,10 @@ print(f"Suma vsech cisel je {suma_cisel}.")
 
 print(oddelovac)
 
+print("len".upper(), "|", "\t", "occurences".upper(), "\t", "|", "nr.".upper())
+
+print(oddelovac)
+
 graf=dict()
 
 for slovo in pocet_slov:
@@ -126,6 +130,6 @@ for slovo in pocet_slov:
     else:
         graf[delka_slova]=1
 
-for delka in sorted(graf):
-    print(f"{delka} {graf[delka]*'*'}")
+for delka_slova in sorted(graf):
+    print(f"{delka_slova} | {graf[delka_slova]*'*'} | {graf[delka_slova]}")
 
