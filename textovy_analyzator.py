@@ -131,5 +131,5 @@ for slovo in pocet_slov:
         graf[delka_slova]=1
 
 for delka_slova in sorted(graf):
-    print(f"{delka_slova} | {graf[delka_slova]*'*'} | {graf[delka_slova]}")
+    print(f"{str(delka_slova).rjust(3)} | {graf[delka_slova]*'*'} {'|'.rjust(19-(graf[delka_slova]))} {graf[delka_slova]}")
 
